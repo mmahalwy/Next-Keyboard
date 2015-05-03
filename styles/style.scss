@@ -1,0 +1,168 @@
+$red-color: #EC2456;
+$btn-primary-color: #EC2456;
+$btn-primary-bg: #fff;
+$btn-info-color: #fff;
+$btn-info-bg: transparent;
+$btn-info-border: #fff;
+$border-radius-large: 40px;
+
+@import 'bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap';
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5{
+  font-family: 'Open Sans', sans-serif;
+  line-height: 130%;
+  font-weight: 300;
+}
+
+html,
+body{
+  overflow-x: hidden;
+}
+
+.block{
+  min-height: 100vh;
+}
+.block-80{
+  height: 80vh;
+}
+.block-title{
+  padding-top: 10%;
+  padding-bottom: 5%;
+  color: $red-color;
+}
+
+.description-title{
+  margin: 0px;
+  color: #000;
+  font-weight: 500;
+  @media(max-width: $screen-xs-max){
+    font-size: 20px;
+  }
+}
+.description-body{
+  color: #B4B4B4;
+  font-weight: 500;
+  line-height: 175%;
+  font-size: 16px;
+}
+
+.opening-block{
+  height: 95vh;
+  background: #ed7324; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ed7324 0%, #ec2456 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ed7324), color-stop(100%,#ec2456)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #ed7324 0%,#ec2456 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #ed7324 0%,#ec2456 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #ed7324 0%,#ec2456 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #ed7324 0%,#ec2456 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed7324', endColorstr='#ec2456',GradientType=0 ); /* IE6-9 */
+  color: #fff;
+
+  .logo{
+    padding-top: 20%;
+    @media(max-width: $screen-xs-max){
+      padding-top: 10%;
+    }
+  }
+  h1{
+    font-size: 56px;
+    @media(max-width: $screen-xs-max){
+      font-size: 36px;
+    }
+  }
+  h3{
+    line-height: 175%;
+    @media(max-width: $screen-xs-max){
+      font-size: 16px;
+    }
+  }
+  .phone-hero{
+    transform: translate(-5%, -5%);
+    width: 200%;
+
+    @media(max-width: $screen-xs-max){
+      transform: translate(40%, -35%) scale(1.25);
+      width: 100%;
+    }
+  }
+
+  button.btn{
+    padding: 20px 16px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 25px;
+  }
+}
+.features-block{
+  h1{
+    @extend .block-title;
+  }
+  .hand-with-phone{
+    transform: translateX(-40%);
+    margin-top: -3.5%;
+    width: 150%;
+
+  }
+  .feature-row{
+    margin: 25px 0px;
+
+    h2{
+      @extend .description-title;
+    }
+    h5{
+      @extend .description-body;
+    }
+  }
+  .svg-icon{
+    width: 40%;
+    margin-top: 5px;
+
+    @media(max-width: $screen-xs-max){
+      width: 80%;
+      margin-top: 0px;
+    }
+  }
+}
+.themes-block{
+  background-color: #EDEDED;
+  padding-bottom: 5%;
+
+  .theme-phones{
+    width: 100%;
+  }
+  img.theme-icon{
+    padding-top: 7.5%;
+    padding-bottom: 30px;
+  }
+}
+.press-block{
+  background-color: #F6F6F6;
+  padding-bottom: 5%;
+
+  .quoting{
+    h3{
+      color: #000;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 175%;
+    }
+    .quote{
+      color: $red-color;
+      font-size: 26px;
+    }
+    h5{
+      color: $red-color;
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+  .press-logos{
+    padding-top: 50px;
+  }
+}
