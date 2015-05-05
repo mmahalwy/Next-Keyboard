@@ -5,6 +5,7 @@ $btn-info-color: #fff;
 $btn-info-bg: transparent;
 $btn-info-border: #fff;
 $border-radius-large: 40px;
+$panel-default-border: transparent;
 
 @import 'bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap';
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
@@ -51,6 +52,37 @@ body{
   line-height: 175%;
   font-size: 16px;
 }
+
+.quote{
+  color: $red-color;
+  font-size: 26px;
+}
+
+.text-red{
+  color: $red-color;
+}
+
+.panel-arrow{
+  position: relative;
+  margin-top: 36px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  &:before{
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    display: inline-block;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #fff;
+    border-left: 12px solid transparent;
+    border-bottom-color: #fff;
+    content: '';
+  }
+}
+
 
 .opening-block{
   height: 95vh;
@@ -152,10 +184,7 @@ body{
       font-weight: 500;
       line-height: 175%;
     }
-    .quote{
-      color: $red-color;
-      font-size: 26px;
-    }
+
     h5{
       color: $red-color;
       font-weight: 500;
@@ -164,5 +193,16 @@ body{
   }
   .press-logos{
     padding-top: 50px;
+  }
+}
+
+.talk-block{
+  background-color: #F6F6F6;
+
+  .block-title{
+    padding-top: 5%;
+  }
+  .glyphicon{
+    font-size: 22px;
   }
 }
