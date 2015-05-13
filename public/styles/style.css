@@ -4981,8 +4981,20 @@ html, body {
     border-bottom-color: #fff;
     content: ''; }
 
+.btn-blog {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  font-family: 'Open Sans';
+  font-weight: bold;
+  border: none;
+  border-radius: 50px; }
+
 .opening-block {
   height: 95vh; }
+  .opening-block .btn-blog {
+    position: absolute;
+    top: 20px;
+    left: 50%; }
   .opening-block .logo {
     padding-top: 20%; }
     @media (max-width: 767px) {
@@ -5018,7 +5030,7 @@ html, body {
 .features-block .feature-row {
   margin: 25px 0px; }
 .features-block .svg-icon {
-  width: 40%;
+  width: 60%;
   margin-top: 5px; }
   @media (max-width: 767px) {
     .features-block .svg-icon {
@@ -5054,14 +5066,23 @@ html, body {
   padding-bottom: 5%; }
   .talk-block .block-title, .talk-block .features-block h1, .features-block .talk-block h1 {
     padding-top: 5%; }
+    @media (max-width: 767px) {
+      .talk-block .block-title, .talk-block .features-block h1, .features-block .talk-block h1 {
+        font-size: 150%; } }
   .talk-block .glyphicon {
     font-size: 22px; }
+  @media (max-width: 767px) {
+    .talk-block .img-circle {
+      width: 20% !important; } }
 
 .story-block {
   background-color: #414345;
   color: #fff;
   overflow-y: hidden;
   max-height: 700px; }
+  @media (max-width: 767px) {
+    .story-block {
+      max-height: initial; } }
   .story-block h1, .story-block p {
     color: #fff; }
   .story-block h1 {
@@ -5077,7 +5098,14 @@ html, body {
     transform: translate(30%, -40%); }
     @media (max-width: 767px) {
       .story-block .story-phone {
-        transform: initial; } }
+        transform: initial;
+        width: 70%;
+        margin-top: -65%; } }
+  @media (max-width: 767px) {
+    .story-block .story h1 {
+      text-align: center; } }
+  .story-block a {
+    font-weight: 600; }
 
 .team-block {
   padding-bottom: 10%; }
@@ -5164,3 +5192,15 @@ html, body {
     font-size: 12px; }
     .finish-block .mission span {
       opacity: 0.5; }
+  .finish-block .btn-blog {
+    margin-top: 30px; }
+  @media (max-width: 767px) {
+    .finish-block {
+      padding-top: 10%; }
+      .finish-block .support-title {
+        font-size: 230%;
+        margin: 35px 0px; }
+      .finish-block input[type=text] {
+        margin: 15px 0px; }
+      .finish-block .social {
+        padding-top: 10%; } }

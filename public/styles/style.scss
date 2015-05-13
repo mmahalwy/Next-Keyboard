@@ -93,12 +93,24 @@ body{
     content: '';
   }
 }
-
+.btn-blog{
+  color: #fff;
+  background: rgba(#fff, 0.2);
+  font-family: 'Open Sans';
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+}
 
 .opening-block{
   height: 95vh;
   @extend .block-gradient;
 
+  .btn-blog{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+  }
   .logo{
     padding-top: 20%;
     @media(max-width: $screen-xs-max){
@@ -155,7 +167,7 @@ body{
     }
   }
   .svg-icon{
-    width: 40%;
+    width: 60%;
     margin-top: 5px;
 
     @media(max-width: $screen-xs-max){
@@ -205,9 +217,19 @@ body{
 
   .block-title{
     padding-top: 5%;
+
+    @media(max-width: $screen-xs-max){
+      font-size: 150%;
+    }
   }
   .glyphicon{
     font-size: 22px;
+  }
+
+  .img-circle{
+    @media(max-width: $screen-xs-max){
+      width: 20% !important;
+    }
   }
 }
 .story-block{
@@ -215,6 +237,10 @@ body{
   color: #fff;
   overflow-y: hidden;
   max-height: 700px;
+
+  @media(max-width: $screen-xs-max){
+    max-height: initial;
+  }
 
   h1, p{
     color: #fff;
@@ -235,7 +261,19 @@ body{
     transform: translate(30%, -40%);
     @media(max-width: $screen-xs-max){
       transform: initial;
+      width: 70%;
+      margin-top: -65%;
     }
+  }
+  .story{
+    @media(max-width: $screen-xs-max){
+      h1{
+        text-align: center;
+      }
+    }
+  }
+  a{
+    font-weight: 600;
   }
 }
 .team-block{
@@ -354,6 +392,26 @@ body{
 
     span{
       opacity: 0.5;
+    }
+  }
+
+  .btn-blog{
+    margin-top: 30px;
+  }
+
+  @media(max-width: $screen-xs-max){
+    padding-top: 10%;
+    .support-title{
+      font-size: 230%;
+      margin: 35px 0px;
+    }
+
+    input[type=text]{
+      margin: 15px 0px;
+    }
+
+    .social{
+      padding-top: 10%;
     }
   }
 }
