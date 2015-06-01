@@ -5132,39 +5132,40 @@ html, body {
     width: 100%;
     padding-top: 5%;
     padding-bottom: 2.5%; }
-  .finish-block input[type=text] {
+  .finish-block input[type=email] {
     background-color: transparent;
     border: 2px solid #fff;
     border-radius: 50px;
     padding: 20px 35px;
     width: 40%;
-    height: 56px; }
+    height: 56px;
+    color: #fff; }
     @media (max-width: 767px) {
-      .finish-block input[type=text] {
+      .finish-block input[type=email] {
         width: 100%; } }
-    .finish-block input[type=text]::-webkit-input-placeholder {
+    .finish-block input[type=email]::-webkit-input-placeholder {
       color: #fff;
       opacity: 0.5;
       font-weight: 500;
       font-size: 16px; }
-    .finish-block input[type=text]:-moz-placeholder {
+    .finish-block input[type=email]:-moz-placeholder {
       /* Firefox 18- */
       color: #fff;
       opacity: 0.5;
       font-weight: 500;
       font-size: 16px; }
-    .finish-block input[type=text]::-moz-placeholder {
+    .finish-block input[type=email]::-moz-placeholder {
       /* Firefox 19+ */
       color: #fff;
       opacity: 0.5;
       font-weight: 500;
       font-size: 16px; }
-    .finish-block input[type=text]:-ms-input-placeholder {
+    .finish-block input[type=email]:-ms-input-placeholder {
       color: #fff;
       opacity: 0.5;
       font-weight: 500;
       font-size: 16px; }
-  .finish-block button {
+  .finish-block input[type=submit] {
     border: 2px solid #fff;
     border-radius: 50px;
     padding: 10px 35px;
@@ -5172,12 +5173,18 @@ html, body {
     width: 15%;
     color: #EC2456; }
     @media (max-width: 767px) {
-      .finish-block button {
+      .finish-block input[type=submit] {
         width: 100%; } }
-    .finish-block button:hover {
+    .finish-block input[type=submit]:hover {
       border-color: #fff;
       opacity: 0.85;
       color: #EC2456; }
+  .finish-block #mce-responses .responses {
+    padding-top: 30px;
+    font-size: 16px;
+    width: 60%;
+    text-align: center;
+    margin: 0px auto; }
   .finish-block .social {
     padding-top: 5%; }
     @media (max-width: 767px) {
@@ -5200,7 +5207,51 @@ html, body {
       .finish-block .support-title {
         font-size: 230%;
         margin: 35px 0px; }
-      .finish-block input[type=text] {
+      .finish-block input[type=email] {
         margin: 15px 0px; }
       .finish-block .social {
         padding-top: 10%; } }
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 0px;
+  height: auto;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  top: -100px;
+  transition: top .75s; }
+  .navbar.active {
+    top: 0px !important; }
+  .navbar .navbar-brand {
+    padding: 8px 15px; }
+  .navbar .logo {
+    height: 100%; }
+  .navbar .navbar-form {
+    width: 50%; }
+  .navbar input[type=email] {
+    background-color: transparent;
+    border: 2px solid #B4B4B4;
+    border-radius: 50px;
+    padding: 15px 25px;
+    width: 60%;
+    height: 40px;
+    color: #fff; }
+    .navbar input[type=email]::-webkit-input-placeholder {
+      font-weight: 700; }
+    .navbar input[type=email]:-moz-placeholder {
+      /* Firefox 18- */
+      font-weight: 700; }
+    .navbar input[type=email]::-moz-placeholder {
+      /* Firefox 19+ */
+      font-weight: 700; }
+    .navbar input[type=email]:-ms-input-placeholder {
+      font-weight: 700; }
+  .navbar .button, .navbar input[type=submit] {
+    margin-left: 15px;
+    color: #EC2456;
+    border: 2px solid #EC2456;
+    border-radius: 26px;
+    height: 40px;
+    font-weight: 700;
+    padding: 5px 25px;
+    font-size: 16px; }
