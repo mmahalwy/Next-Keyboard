@@ -59,8 +59,8 @@ body{
 }
 .description-body{
   color: #B4B4B4;
-  font-weight: 500;
-  line-height: 175%;
+  font-weight: 300;
+  line-height: 190%;
   font-size: 16px;
 }
 
@@ -106,6 +106,10 @@ body{
   height: 95vh;
   @extend .block-gradient;
 
+  @media(max-width: 320px){ //Fix for iphone 5
+    height: 120vh;
+  }
+
   .btn-blog{
     position: absolute;
     top: 20px;
@@ -144,6 +148,18 @@ body{
     font-size: 16px;
     font-weight: 700;
     margin-top: 25px;
+    border-width: 2px;
+
+    @media(max-width: $screen-xs-max){
+      font-size: 12px;
+      padding: 16px;
+      height: 51px;
+
+      img{
+        margin-top: -5px;
+        margin-right: 5px;
+      }
+    }
   }
 }
 .features-block{
@@ -231,6 +247,33 @@ body{
       width: 20% !important;
     }
   }
+
+  .twitter-handle{
+    font-size: 22pt;
+    color: $red-color;
+  }
+
+  .twitter-talk{
+    font-size: 16pt;
+    color: #414141;
+    font-weight: 500;
+  }
+
+  .twitter-icon{
+    width: 7%;
+
+    @media(max-width: $screen-xs-max){
+      width: 13%;
+    }
+  }
+
+  @media(max-width: $screen-xs-max){
+    .panel{
+      h1{
+        font-size: 22pt;
+      }
+    }
+  }
 }
 .story-block{
   background-color: #414345;
@@ -248,6 +291,11 @@ body{
   h1{
     padding-top: 10%;
     padding-bottom: 5%;
+
+    img{
+      width: 45px;
+      margin-right: 20px;
+    }
   }
   p{
     line-height: 175%;
@@ -441,6 +489,11 @@ body{
     top: 0px !important;
   }
 
+  .navbar-right{
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
   .navbar-brand{
     padding: 8px 15px;
   }
@@ -463,22 +516,26 @@ body{
 
     &::-webkit-input-placeholder {
        font-weight: 700;
+       font-size: 14px;
     }
 
     &:-moz-placeholder { /* Firefox 18- */
        font-weight: 700;
+       font-size: 14px;
     }
 
     &::-moz-placeholder {  /* Firefox 19+ */
        font-weight: 700;
+       font-size: 14px;
     }
 
     &:-ms-input-placeholder {
        font-weight: 700;
+       font-size: 14px;
     }
   }
   .button,
-  input[type=submit]{
+  .btn{
     margin-left: 15px;
     color: $red-color;
     border: 2px solid $red-color;
@@ -486,6 +543,23 @@ body{
     height: 40px;
     font-weight: 700;
     padding: 5px 25px;
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 28px;
+
+    &:hover{
+      background: $red-color !important;
+      color: #fff !important;
+      border-color: $red-color !important;
+    }
+
+    &.download{
+      background: $red-color;
+      color: #fff;
+    }
+
+    &.blog{
+      color: $red-color;
+      border-color: #B4B4B4;
+    }
   }
 }

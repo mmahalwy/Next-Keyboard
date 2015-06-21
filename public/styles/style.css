@@ -4952,8 +4952,8 @@ html, body {
 
 .description-body, .features-block .feature-row h5 {
   color: #B4B4B4;
-  font-weight: 500;
-  line-height: 175%;
+  font-weight: 300;
+  line-height: 190%;
   font-size: 16px; }
 
 .quote {
@@ -4991,6 +4991,9 @@ html, body {
 
 .opening-block {
   height: 95vh; }
+  @media (max-width: 320px) {
+    .opening-block {
+      height: 120vh; } }
   .opening-block .btn-blog {
     position: absolute;
     top: 20px;
@@ -5021,7 +5024,16 @@ html, body {
     padding: 20px 16px;
     font-size: 16px;
     font-weight: 700;
-    margin-top: 25px; }
+    margin-top: 25px;
+    border-width: 2px; }
+    @media (max-width: 767px) {
+      .opening-block button.btn {
+        font-size: 12px;
+        padding: 16px;
+        height: 51px; }
+        .opening-block button.btn img {
+          margin-top: -5px;
+          margin-right: 5px; } }
 
 .features-block .hand-with-phone {
   transform: translateX(-40%);
@@ -5074,6 +5086,21 @@ html, body {
   @media (max-width: 767px) {
     .talk-block .img-circle {
       width: 20% !important; } }
+  .talk-block .twitter-handle {
+    font-size: 22pt;
+    color: #EC2456; }
+  .talk-block .twitter-talk {
+    font-size: 16pt;
+    color: #414141;
+    font-weight: 500; }
+  .talk-block .twitter-icon {
+    width: 7%; }
+    @media (max-width: 767px) {
+      .talk-block .twitter-icon {
+        width: 13%; } }
+  @media (max-width: 767px) {
+    .talk-block .panel h1 {
+      font-size: 22pt; } }
 
 .story-block {
   background-color: #414345;
@@ -5088,6 +5115,9 @@ html, body {
   .story-block h1 {
     padding-top: 10%;
     padding-bottom: 5%; }
+    .story-block h1 img {
+      width: 45px;
+      margin-right: 20px; }
   .story-block p {
     line-height: 175%;
     opacity: 0.75;
@@ -5222,6 +5252,9 @@ html, body {
   transition: top .75s; }
   .navbar.active {
     top: 0px !important; }
+  .navbar .navbar-right {
+    margin-top: 8px;
+    margin-bottom: 8px; }
   .navbar .navbar-brand {
     padding: 8px 15px; }
   .navbar .logo {
@@ -5237,16 +5270,20 @@ html, body {
     height: 40px;
     color: #fff; }
     .navbar input[type=email]::-webkit-input-placeholder {
-      font-weight: 700; }
+      font-weight: 700;
+      font-size: 14px; }
     .navbar input[type=email]:-moz-placeholder {
       /* Firefox 18- */
-      font-weight: 700; }
+      font-weight: 700;
+      font-size: 14px; }
     .navbar input[type=email]::-moz-placeholder {
       /* Firefox 19+ */
-      font-weight: 700; }
+      font-weight: 700;
+      font-size: 14px; }
     .navbar input[type=email]:-ms-input-placeholder {
-      font-weight: 700; }
-  .navbar .button, .navbar input[type=submit] {
+      font-weight: 700;
+      font-size: 14px; }
+  .navbar .button, .navbar .btn {
     margin-left: 15px;
     color: #EC2456;
     border: 2px solid #EC2456;
@@ -5254,4 +5291,15 @@ html, body {
     height: 40px;
     font-weight: 700;
     padding: 5px 25px;
-    font-size: 16px; }
+    font-size: 14px;
+    line-height: 28px; }
+    .navbar .button:hover, .navbar .btn:hover {
+      background: #EC2456 !important;
+      color: #fff !important;
+      border-color: #EC2456 !important; }
+    .navbar .button.download, .navbar .btn.download {
+      background: #EC2456;
+      color: #fff; }
+    .navbar .button.blog, .navbar .btn.blog {
+      color: #EC2456;
+      border-color: #B4B4B4; }
