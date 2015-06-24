@@ -5020,6 +5020,10 @@ html, body {
       .opening-block .phone-hero {
         transform: translate(40%, -35%) scale(1.25);
         width: 100%; } }
+    @media (max-width: 991px) and (min-width: 767px) {
+      .opening-block .phone-hero {
+        transform: translate(-25%, 25%);
+        width: 500%; } }
   .opening-block button.btn {
     padding: 20px 16px;
     font-size: 16px;
@@ -5105,9 +5109,12 @@ html, body {
 .story-block {
   background-color: #414345;
   color: #fff;
-  overflow-y: hidden;
+  overflow: hidden;
   max-height: 700px; }
   @media (max-width: 767px) {
+    .story-block {
+      max-height: initial; } }
+  @media (max-width: 991px) and (min-width: 767px) {
     .story-block {
       max-height: initial; } }
   .story-block h1, .story-block p {
@@ -5115,15 +5122,19 @@ html, body {
   .story-block h1 {
     padding-top: 10%;
     padding-bottom: 5%; }
-    .story-block h1 img {
-      width: 45px;
-      margin-right: 20px; }
   .story-block p {
     line-height: 175%;
     opacity: 0.75;
     font-size: 16px; }
   .story-block .emojis {
     letter-spacing: 15px; }
+    .story-block .emojis img {
+      width: 45px;
+      margin-right: 20px; }
+      @media (max-width: 991px) and (min-width: 767px) {
+        .story-block .emojis img {
+          width: 38px;
+          margin-right: 10px; } }
   .story-block .story-phone {
     transform: translate(30%, -40%); }
     @media (max-width: 767px) {
@@ -5131,6 +5142,10 @@ html, body {
         transform: initial;
         width: 70%;
         margin-top: -65%; } }
+    @media (max-width: 991px) and (min-width: 767px) {
+      .story-block .story-phone {
+        transform: translate(0%, -20%);
+        width: 175%; } }
   @media (max-width: 767px) {
     .story-block .story h1 {
       text-align: center; } }
@@ -5303,3 +5318,6 @@ html, body {
     .navbar .button.blog, .navbar .btn.blog {
       color: #EC2456;
       border-color: #B4B4B4; }
+  @media (max-width: 991px) {
+    .navbar form {
+      display: none; } }

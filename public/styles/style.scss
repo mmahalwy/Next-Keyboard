@@ -141,6 +141,11 @@ body{
       transform: translate(40%, -35%) scale(1.25);
       width: 100%;
     }
+
+    @media(max-width: $screen-sm-max) and (min-width: $screen-xs-max){
+      transform: translate(-25%, 25%);
+      width: 500%;
+    }
   }
 
   button.btn{
@@ -278,10 +283,14 @@ body{
 .story-block{
   background-color: #414345;
   color: #fff;
-  overflow-y: hidden;
+  overflow: hidden;
   max-height: 700px;
 
   @media(max-width: $screen-xs-max){
+    max-height: initial;
+  }
+
+  @media(max-width: $screen-sm-max) and (min-width: $screen-xs-max){
     max-height: initial;
   }
 
@@ -292,10 +301,6 @@ body{
     padding-top: 10%;
     padding-bottom: 5%;
 
-    img{
-      width: 45px;
-      margin-right: 20px;
-    }
   }
   p{
     line-height: 175%;
@@ -304,13 +309,29 @@ body{
   }
   .emojis{
     letter-spacing: 15px;
+
+    img{
+      width: 45px;
+      margin-right: 20px;
+
+      @media(max-width: $screen-sm-max) and (min-width: $screen-xs-max){
+        width: 38px;
+        margin-right: 10px;
+      }
+    }
   }
   .story-phone{
     transform: translate(30%, -40%);
+
     @media(max-width: $screen-xs-max){
       transform: initial;
       width: 70%;
       margin-top: -65%;
+    }
+
+    @media(max-width: $screen-sm-max) and (min-width: $screen-xs-max){
+      transform: translate(0%, -20%);
+      width: 175%;
     }
   }
   .story{
@@ -560,6 +581,11 @@ body{
     &.blog{
       color: $red-color;
       border-color: #B4B4B4;
+    }
+  }
+  @media(max-width: $screen-sm-max){
+    form{
+      display: none;
     }
   }
 }
