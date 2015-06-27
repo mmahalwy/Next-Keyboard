@@ -57,13 +57,13 @@
           </h3>
           <div class="row">
             <div class="col-md-5 col-xs-7">
-              <button class="btn btn-info btn-lg btn-block">
-                <img src="assets/Icons/SVG/play-icon.svg" alt="" /> WATCH VIDEO
+              <button class="btn btn-info btn-lg btn-block watch toggle-modal" data-toggle="modal" data-target="#myModal">
+                <span class="img"></span> WATCH VIDEO
               </button>
             </div>
             <div class="col-md-5 col-xs-7">
-              <button class="btn btn-primary btn-lg btn-block">
-                DOWNLOAD APP
+              <button class="btn btn-primary btn-lg btn-block download">
+                <span class="img"></span> DOWNLOAD APP
               </button>
             </div>
           </div>
@@ -86,7 +86,7 @@
           </h1>
         </div>
         <div class="col-md-6">
-          <img src="assets/Images/Desktop Phone Images/hand-with-phone.png" class="hand-with-phone">
+          <img src="assets/Images/Desktop Phone Images/feature-hero.png" class="hand-with-phone">
         </div>
         <div class="col-md-6">
           <div class="row feature-row">
@@ -177,7 +177,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4 col-md-offset-1 col-xs-10 col-xs-offset-1 quoting">
+        <div class="col-md-4 col-md-offset-1 col-xs-10 col-xs-offset-1 quoting panel">
           <h3>
             <em>
               <span class="quote">"</span>
@@ -190,7 +190,7 @@
             -iDownloadBlog:
           </h5>
         </div>
-        <div class="col-md-4 col-md-offset-2 col-xs-10 col-xs-offset-1 quoting">
+        <div class="col-md-4 col-md-offset-2 col-xs-10 col-xs-offset-1 quoting panel">
           <h3>
             <em>
               <span class="quote">"</span>
@@ -282,12 +282,6 @@
                       Woa! <span class="text-red">@nextkeyboard</span> is amazing,
                       has become my default keyboard even in beta version.
                   </h2>
-                  <h3>
-                    <small>
-                      <span class="text-red">Silmeydel</span>
-                      <span class="text-muted">• Mar 14th</span>
-                    </small>
-                  </h3>
                 </div>
               </div>
             </div>
@@ -302,12 +296,6 @@
                   <h2 class="twitter-talk">
                       This is the keyboard that iOS desperately needs.
                   </h2>
-                  <h3>
-                    <small>
-                      <span class="text-red">Peter Sobot</span>
-                      <span class="text-muted">• Jan 16th</span>
-                    </small>
-                  </h3>
                 </div>
               </div>
             </div>
@@ -475,8 +463,13 @@
     </div>
   </div>
 </div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <iframe class="modal-dialog" id="video" frameborder="0" autoplayer="1" allowfullscreen title="YouTube video player" width="315" height="660" src="https://www.youtube.com/embed/Dcr-0AOQHts?rel=0&amp;enablejsapi=1&amp;origin=http%3A%2F%2Fnextkeyboard.co"></iframe>
+</div>
 <script type="text/javascript" src="scripts/jquery.js"></script>
 <script type="text/javascript" src="scripts/main.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
 <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 </body>
