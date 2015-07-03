@@ -1001,7 +1001,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
-  color: #333333;
+  color: #414345;
   background-color: #fff; }
 
 input, button, select, textarea {
@@ -2290,7 +2290,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #737373; }
+  color: #7f8386; }
 
 @media (min-width: 768px) {
   .form-inline .form-group {
@@ -3617,7 +3617,7 @@ a.badge:hover, a.badge:focus {
     margin-right: auto; }
   .thumbnail .caption {
     padding: 9px;
-    color: #333333; }
+    color: #414345; }
 
 a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   border-color: #EC2456; }
@@ -4849,7 +4849,8 @@ html, body {
   transform: translateX(-50%) !important; }
   @media (max-width: 767px) {
     .modal-dialog {
-      width: 100vw; } }
+      width: 80vw;
+      height: 50vh; } }
 
 input:focus, .form-control:focus {
   box-shadow: none;
@@ -4926,13 +4927,23 @@ input:focus, .form-control:focus {
   font-family: 'Open Sans';
   font-weight: bold;
   border: none;
-  border-radius: 50px; }
+  border-radius: 50px;
+  z-index: 1; }
+  .btn-blog:hover {
+    background: #FFFFFF;
+    color: #EC2456; }
 
 .opening-block {
   height: 95vh; }
   @media (max-width: 320px) {
     .opening-block {
       height: 120vh; } }
+  @media (max-width: 767px) {
+    .opening-block .image-blog {
+      position: initial; }
+      .opening-block .image-blog .btn-blog {
+        left: initial;
+        right: 10%; } }
   .opening-block .btn-blog {
     position: absolute;
     top: 20px;
@@ -4955,7 +4966,9 @@ input:focus, .form-control:focus {
   .opening-block .phone-hero {
     -webkit-transform: translate(-5%, -5%);
     transform: translate(-5%, -5%);
-    width: 200%; }
+    width: 200%;
+    z-index: 0;
+    position: relative; }
     @media (max-width: 767px) {
       .opening-block .phone-hero {
         -webkit-transform: translate(40%, -35%) scale(1.25);
@@ -4971,12 +4984,14 @@ input:focus, .form-control:focus {
     font-size: 16px;
     font-weight: 700;
     margin-top: 25px;
-    border-width: 2px; }
+    border-width: 2px;
+    z-index: 1; }
     @media (max-width: 767px) {
       .opening-block button.btn {
         font-size: 12px;
         padding: 16px;
-        height: 51px; }
+        height: 51px;
+        position: relative; }
         .opening-block button.btn .img {
           margin-top: -15px;
           margin-right: 0px; } }
@@ -4995,14 +5010,22 @@ input:focus, .form-control:focus {
   .opening-block .watch .img {
     background: url("/assets/Icons/SVG/play-icon.svg") center center no-repeat; }
   .opening-block .download .img {
-    background: url("/assets/Icons/apple.png") center center no-repeat; }
+    background: url("/assets/Icons/apple.png") center center no-repeat;
+    background-size: 80%; }
 
+@media (min-width: 767px) {
+  .features-block {
+    padding-bottom: 60px; } }
 .features-block .hand-with-phone {
-  margin-top: -20%;
-  width: 75%; }
+  margin-top: -5%;
+  width: 65%;
+  -webkit-transform: translateX(-20%);
+  transform: translateX(-20%); }
   @media (max-width: 767px) {
     .features-block .hand-with-phone {
-      margin-top: 0%; } }
+      margin-top: 0%;
+      -webkit-transform: none;
+      transform: none; } }
 .features-block .feature-row {
   margin: 25px 0px; }
 .features-block .svg-icon {
@@ -5055,7 +5078,7 @@ input:focus, .form-control:focus {
     color: #EC2456; }
   .talk-block .twitter-talk {
     font-size: 16pt;
-    color: #414141;
+    color: #414345;
     font-weight: 500; }
   .talk-block .twitter-icon {
     width: 7%; }
@@ -5211,7 +5234,14 @@ input:focus, .form-control:focus {
     padding-top: 2.5%;
     font-size: 12px; }
     .finish-block .mission span {
+      color: #fff;
       opacity: 0.5; }
+      .finish-block .mission span img {
+        opacity: 1; }
+    .finish-block .mission a:hover {
+      text-decoration: none; }
+      .finish-block .mission a:hover span {
+        opacity: 1; }
   .finish-block .btn-blog {
     margin-top: 30px; }
   @media (max-width: 767px) {
