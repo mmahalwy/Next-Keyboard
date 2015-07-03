@@ -688,6 +688,28 @@ input:focus,
       border-color: #B4B4B4;
     }
   }
+  .responses{
+    .success,
+    .error{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      z-index: 999999;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .success{
+      background-color: $red-color;
+    }
+    .error{
+      background-color: #e67e22;
+    }
+  }
   @media(max-width: $screen-sm-max){
     form{
       display: none;
