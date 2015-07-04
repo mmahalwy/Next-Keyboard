@@ -7,7 +7,7 @@ $btn-info-border: #fff;
 $border-radius-large: 40px;
 $panel-default-border: transparent;
 $link-color: $red-color;
-$text-color: #414345;
+$text-color: rgb(184, 184, 184);
 
 @import 'bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap';
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
@@ -78,7 +78,7 @@ input:focus,
   }
 }
 .description-body{
-  color: #B4B4B4;
+  color: $text-color;
   font-weight: 300;
   line-height: 190%;
   font-size: 16px;
@@ -183,7 +183,12 @@ input:focus,
 
     @media(max-width: $screen-sm-max) and (min-width: $screen-xs-max){
       transform: translate(-25%, 25%);
-      width: 500%;
+      width: 400%;
+    }
+
+    @media(max-width: $screen-md-max) and (min-width: $screen-sm-max){
+      transform: translate(-10%, 5%);
+      width: 250%;
     }
   }
 
@@ -667,17 +672,29 @@ input:focus,
     font-size: 14px;
     line-height: 28px;
 
-    &:hover{
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited{
       background: $red-color !important;
       color: #fff !important;
       border-color: $red-color !important;
+      outline: none;
     }
 
     &.download{
       background: $red-color;
       color: #fff;
 
-      &:hover{
+      &:focus{
+        background: $red-color;
+        color: #fff;
+      }
+
+      &:hover,
+      &:focus,
+      &:active,
+      &:visited{
         background: #fff !important;
         color: $red-color !important;
       }
@@ -686,6 +703,10 @@ input:focus,
     &.blog{
       color: $red-color;
       border-color: #B4B4B4;
+
+      &:focus{
+        color: $red-color;
+      }
     }
   }
   .responses{
