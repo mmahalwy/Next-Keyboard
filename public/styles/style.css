@@ -5303,7 +5303,7 @@ input:focus, .form-control:focus {
     .navbar input[type=email]:-ms-input-placeholder {
       font-weight: 700;
       font-size: 14px; }
-  .navbar .button, .navbar .btn {
+  .navbar a.button, .navbar a.btn, .navbar input.btn {
     margin-left: 15px;
     color: #EC2456;
     border: 2px solid #EC2456;
@@ -5313,25 +5313,30 @@ input:focus, .form-control:focus {
     padding: 5px 25px;
     font-size: 14px;
     line-height: 28px; }
-    .navbar .button:hover, .navbar .button:focus, .navbar .button:active, .navbar .button:visited, .navbar .btn:hover, .navbar .btn:focus, .navbar .btn:active, .navbar .btn:visited {
-      background: #EC2456 !important;
-      color: #fff !important;
-      border-color: #EC2456 !important;
-      outline: none; }
-    .navbar .button.download, .navbar .btn.download {
-      background: #EC2456;
+    .navbar a.button:hover, .navbar a.btn:hover, .navbar input.btn:hover {
+      background-color: #EC2456;
       color: #fff; }
-      .navbar .button.download:focus, .navbar .btn.download:focus {
-        background: #EC2456;
-        color: #fff; }
-      .navbar .button.download:hover, .navbar .button.download:focus, .navbar .button.download:active, .navbar .button.download:visited, .navbar .btn.download:hover, .navbar .btn.download:focus, .navbar .btn.download:active, .navbar .btn.download:visited {
-        background: #fff !important;
-        color: #EC2456 !important; }
-    .navbar .button.blog, .navbar .btn.blog {
+    .navbar a.button.download, .navbar a.btn.download, .navbar input.btn.download {
+      color: #fff;
+      background-color: #EC2456; }
+      .navbar a.button.download:focus, .navbar a.button.download:active, .navbar a.button.download:visited, .navbar a.btn.download:focus, .navbar a.btn.download:active, .navbar a.btn.download:visited, .navbar input.btn.download:focus, .navbar input.btn.download:active, .navbar input.btn.download:visited {
+        color: #fff;
+        background-color: #EC2456;
+        outline: none; }
+      .navbar a.button.download:hover, .navbar a.btn.download:hover, .navbar input.btn.download:hover {
+        color: #EC2456;
+        background-color: #fff; }
+    .navbar a.button.blog, .navbar a.btn.blog, .navbar input.btn.blog {
       color: #EC2456;
       border-color: #B4B4B4; }
-      .navbar .button.blog:focus, .navbar .btn.blog:focus {
-        color: #EC2456; }
+      .navbar a.button.blog:focus, .navbar a.button.blog:active, .navbar a.button.blog:visited, .navbar a.btn.blog:focus, .navbar a.btn.blog:active, .navbar a.btn.blog:visited, .navbar input.btn.blog:focus, .navbar input.btn.blog:active, .navbar input.btn.blog:visited {
+        color: #EC2456;
+        border-color: #B4B4B4;
+        outline: none; }
+      .navbar a.button.blog:hover, .navbar a.btn.blog:hover, .navbar input.btn.blog:hover {
+        background: #EC2456;
+        border-color: #EC2456;
+        color: #fff; }
   .navbar .responses .success, .navbar .responses .error {
     position: absolute;
     top: 0px;
