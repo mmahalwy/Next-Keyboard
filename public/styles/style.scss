@@ -181,6 +181,11 @@ input:focus,
       width: 100%;
     }
 
+    @media(min-width: $screen-xs-min) and (max-width: $screen-xs-max){
+      transform: translate(50%, -35%) scale(1.25);
+      width: 100%;
+    }
+
     @media(max-width: $screen-sm-max) and (min-width: $screen-xs-max){
       transform: translate(-25%, 25%);
       width: 400%;

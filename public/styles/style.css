@@ -4974,6 +4974,11 @@ input:focus, .form-control:focus {
         -webkit-transform: translate(40%, -35%) scale(1.25);
         transform: translate(40%, -35%) scale(1.25);
         width: 100%; } }
+    @media (min-width: 480px) and (max-width: 767px) {
+      .opening-block .phone-hero {
+        -webkit-transform: translate(50%, -35%) scale(1.25);
+        transform: translate(50%, -35%) scale(1.25);
+        width: 100%; } }
     @media (max-width: 991px) and (min-width: 767px) {
       .opening-block .phone-hero {
         -webkit-transform: translate(-25%, 25%);
